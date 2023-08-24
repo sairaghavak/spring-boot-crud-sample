@@ -1,2 +1,43 @@
-# spring-boot-crud-sample
-A minimalistic SpringBoot CRUD Sample
+# REST API CRUD operations with SpringBoot
+
+This repo demonstrates the usage of HTTP's `POST`, `GET`, `PUT`, `DELETE` operations while developing REST APIs using Spring Boot.
+
+## Here are the APIs
+
+```http
+### @author: sairaghavak
+
+### POST /blog/posts
+
+POST http://localhost:2023/blog/posts 
+Content-Type: application/json
+
+{
+  "title": "srk",
+  "content" : "a-z"
+}
+
+
+### Get all posts -- GET /blog/posts
+GET http://localhost:2023/blog/posts
+
+@uuid=1af1828f-9c2b-3312-984d-eb0c2d20d876
+
+
+### Get a specific post - GET /blog/posts/{uuid}
+GET http://localhost:2023/blog/posts/{{uuid}}
+
+### Update a post - PUT /blog/posts/{id}
+PUT http://localhost:2023/blog/posts/{{uuid}}
+Content-Type: application/json
+
+{
+  "title": "srk-update",
+  "content": "a-z-update"
+}
+
+
+### Delete a post - DELETE /blog/posts/{uuid}
+DELETE http://localhost:2023/blog/posts/{{uuid}}
+
+```

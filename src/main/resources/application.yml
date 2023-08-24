@@ -1,0 +1,4 @@
+server:
+  port: 2023
+  servlet:
+    context-path: /blog # context-path must start with '/'
