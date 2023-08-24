@@ -1,3 +1,7 @@
+# Ignore setup files
+.m2
+.devcontainer
+target
 # Compiled class file
 *.class
 
